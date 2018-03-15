@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     environment:
-      BROKERS: kafka:9092
+      BROKERS: kafka:9094
       TOPIC: test
   zookeeper:
     image: wurstmeister/zookeeper:latest
