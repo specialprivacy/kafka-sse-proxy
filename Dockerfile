@@ -13,4 +13,4 @@ RUN npm install
 
 COPY lib /app/lib
 COPY test /app/test
-RUN if [ ${NODE_ENV} == "production" ] rm -rf /app/test
+RUN if [ ${NODE_ENV} == "production" ]; then rm -rf /app/test; fi
