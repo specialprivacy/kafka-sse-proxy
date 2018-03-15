@@ -2,7 +2,7 @@ FROM mhart/alpine-node:8
 
 WORKDIR /app
 EXPOSE 80
-ENV NODE_ENV='development'
+ARG NODE_ENV='development'
 CMD ["node", "lib/index.js"]
 
 RUN apk add --no-cache git
