@@ -1,3 +1,4 @@
+'use strict'
 let chai = require('chai')
 let expect = chai.expect
 const {NOT_FOUND} = require('http-status-codes')

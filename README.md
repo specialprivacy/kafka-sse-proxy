@@ -36,4 +36,5 @@ PORT=12345 BROKERS=localhost:9094 TOPIC=test npm start
 * Allow clients to set filters when fetching the partitions
 * Add tests
 * Improve the handling of kafka errors (currently the values are not being set in the reply set to the client)
+* Improve midstream error handling (right now the client will not receive an error event)
 * See if the kafka-consumer-stream can be added to the no-kafka driver

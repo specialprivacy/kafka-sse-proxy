@@ -29,6 +29,17 @@ describe('error-handler', () => {
       .which.satisfy(schemaValidator)
   })
 
+  it('Should return a json error if content-type text/event-stream was request', () => {
+    let resp = request(app)
+      .get('/partitions')
+      .set('accept', 'text/event-stream')
+
+    return expect(resp).to.eventually.have.status(INTERNAL_SERVER_ERROR)
+      .and.be.json
+      .and.have.property('body')
+      .which.satisfy(schemaValidator)
+  })
+
   it('Should return an html error if content-type html was requested', () => {
     let resp = request(app)
       .get('/partitions')
