@@ -44,7 +44,7 @@
     "uuid": "~3.2.1"
   },
   "devDependencies": {
-    "ajv": "~6.2.0",
+    "ajv": "~6.12.3",
     "chai": "~4.1.2",
     "chai-as-promised": "~7.1.1",
     "chai-http": "git+https://github.com/farmisen/chai-http.git#Issue-75_Cant_test_expected_error_responses_because_superagent_throws",
